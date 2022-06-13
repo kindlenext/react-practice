@@ -14,3 +14,87 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.header {
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  box-shadow: 5px gray;
+}
+
+.header--image {
+  margin-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.header--title {
+  font-size: 20px;
+  margin-right: auto;
+}
+.header--project {
+  font-size: 12px;
+  font-weight: 500;
+}
+.forrm {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.main {
+  padding: 36px;
+}
+.form--input {
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+.bg-clr {
+  background-color: rgb(153, 129, 141);
+}
+.state--value {
+  border: 1px solid rgb(164, 21, 164);
+  color: #a626d3;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 20px 40px;
+  width: 20%;
+  text-align: center;
+}
+.state {
+  align-content: center;
+}
+.state--title {
+  text-align: center;
+}
+.counter--count {
+  border: 1px solid rgb(116, 16, 16);
+  border-radius: 80px;
+  padding: 30px 30px;
+  background-color: rgb(147, 22, 22);
+  width: 10%;
+  text-align: center;
+}
+.counter--minus {
+  background-color: rgb(63, 63, 147);
+  color: white;
+  border-radius: 30px;
+  padding: 4px 10px;
+}
+.counter--plus {
+  background-color: rgb(63, 63, 147);
+  color: white;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+.counter {
+  transform: translate(50px, 100px);
+}
