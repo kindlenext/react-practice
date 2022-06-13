@@ -98,3 +98,7 @@ a {
 .counter {
   transform: translate(50px, 100px);
 }
+.meme--image {
+  max-width: 100%;
+  text-align: center;
+}
