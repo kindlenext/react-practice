@@ -102,3 +102,14 @@ a {
   max-width: 100%;
   text-align: center;
 }
+.btn--img {
+  border: 1px solid rgb(116, 16, 16);
+  border-radius: 8px;
+  padding: 10px 50px;
+  background-color: rgb(216, 159, 159);
+  width: 10%;
+  text-align: center;
+}
+.text-clr {
+  color: #672280;
+}

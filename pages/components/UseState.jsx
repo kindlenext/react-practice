@@ -11,7 +11,7 @@ export default function UseState() {
 
   return (
     <div className="contaier state">
-      <h1 className="state--title">Is State Important To Know</h1>
+      <h1 className="state--title text-clr">Is State Important To Know</h1>
       <div className="state--value" onClick={handleClick}>
         <h1>{isImportant}</h1>
       </div>
