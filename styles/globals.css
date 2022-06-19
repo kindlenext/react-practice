@@ -75,28 +75,29 @@ a {
 .state--title {
   text-align: center;
 }
-.counter--count {
+.counter-count {
   border: 1px solid rgb(116, 16, 16);
   border-radius: 80px;
-  padding: 30px 30px;
+  padding: 40px 40px;
   background-color: rgb(147, 22, 22);
-  width: 10%;
   text-align: center;
 }
-.counter--minus {
+.counter-minus {
   background-color: rgb(63, 63, 147);
   color: white;
   border-radius: 30px;
-  padding: 4px 10px;
+  padding: px;
+  transform: translate(16px, 12px);
 }
-.counter--plus {
+.counter-plus {
   background-color: rgb(63, 63, 147);
   color: white;
   border-radius: 30px;
-  padding: 5px 10px;
+  padding: px;
+  transform: translate(16px, -14px);
 }
 .counter {
-  transform: translate(50px, 100px);
+  transform: rotate(90deg);
 }
 .meme--image {
   max-width: 100%;

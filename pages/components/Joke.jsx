@@ -14,7 +14,7 @@ export default function Joke(props) {
       {props.appName && <h3 className="text-clr">{props.appName}</h3>}
       {isShown && <p>{props.history}</p>}
       <button onClick={toggleShown} className="btn--img">
-        Show Detail
+        ShowDetail
       </button>
       <hr />
     </div>

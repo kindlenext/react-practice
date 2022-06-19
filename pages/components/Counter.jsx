@@ -26,14 +26,14 @@ export default function UseStateCounter() {
     setCount((prevCount) => prevCount - 1);
   }
   return (
-    <div className=" py-5 px-5 mt-5 body bg-clr">
-      <button className="counter--minus" onClick={substract}>
+    <div className=" py-5 px-5 mt-5 body">
+      <button className="counter-minus" onClick={substract}>
         -
       </button>
       <div>
-        <h1 className="counter--count">{count}</h1>
+        <button className="counter-count">{count}</button>
       </div>
-      <button className="counter--plus" onClick={add}>
+      <button className="counter-plus" onClick={add}>
         +
       </button>
     </div>
