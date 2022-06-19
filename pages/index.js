@@ -7,6 +7,7 @@ import UnReadMessage from "./components/renderingcond";
 import UseState from "./components/UseState";
 // import List from "./components/List";
 import Joke from "./components/Joke";
+import Dice from "./components/dice";
 
 export default function Home() {
   return (
@@ -26,6 +27,8 @@ export default function Home() {
         appName="Facebook"
         history="Create an account or log into Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates."
       />
+      <hr />
+      <Dice />
     </div>
   );
 }
