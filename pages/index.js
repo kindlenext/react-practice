@@ -8,6 +8,7 @@ import UseState from "./components/UseState";
 // import List from "./components/List";
 import Joke from "./components/Joke";
 import Dice from "./components/dice";
+import TextForm from "./components/TextForm";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
       />
       <hr />
       <Dice />
+      <hr />
+      <TextForm heading="Enter the Text"/>
     </div>
   );
 }
