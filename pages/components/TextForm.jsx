@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function TextForm(props) {
   const [text, setText] = useState("");
+  const [decoration, setDecoration] = useState("");
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
@@ -29,7 +30,13 @@ export default function TextForm(props) {
     let newText = "";
     setText(newText);
   };
-  
+  const handleRevClick = () => {
+    let newText = text.split(" ").reverse().join(" ");
+    setText(newText);
+  };
+   const handelDecClick = () => {
+     setDecoration({ textDecoration: "line-through" });
+   };
   return (
     <>
       <div className="container">
@@ -81,6 +88,18 @@ export default function TextForm(props) {
           onClick={handleClearClick}
         >
           Clear
+        </button>
+        <button
+          className="btn btn-warning fw-bolder mb-3 text-white rounded-pill mx-2"
+          onClick={handleRevClick}
+        >
+          Reverse words
+        </button>
+        <button
+          className="btn btn-warning fw-bolder mb-3 text-white rounded-pill mx-2"
+          onClick={handelDecClick}
+        >
+          Decoration
         </button>
       </div>
       <div className="container">

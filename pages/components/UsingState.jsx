@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 
-export default function UseState() {
+export default function UsingState() {
   //   const result = React.useState("yes");
   const [isImportant, setIsImportant] = React.useState("Yes");
 
