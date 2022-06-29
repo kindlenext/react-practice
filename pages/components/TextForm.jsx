@@ -2,41 +2,53 @@ import React, { useState } from "react";
 
 export default function TextForm(props) {
   const [text, setText] = useState("");
-  const [decoration, setDecoration] = useState("");
+  // const [decoration, setDecoration] = useState("");
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
+      props.showAlert("uppercase has been activated", "success");
+    
   };
   const handleLoClick = () => {
     let newText = text.toLowerCase();
     setText(newText);
+      props.showAlert("lowercase has been activated", "success");
+
   };
   // const handleCapClick = () => {
-  //   let newText = text.toCapitalizeCase();
-  //   setText(newText);
-  // };
+  //   const lower = word.toLowerCase();
+  //   return lower.charAt(0).toUpperCase() + lower.slice(1);
+  // };---not working
   const speak = () => {
     let msg = new SpeechSynthesisUtterance();
     msg.text = text;
     window.speechSynthesis.speak(msg);
+      props.showAlert("speak alert activated", "success");
+
   };
   const handelCopyClick = () => {
     navigator.clipboard.writeText(text);
+      props.showAlert("copied to clipboard", "success");
+
   };
   const handleClearClick = () => {
     let newText = "";
     setText(newText);
+      props.showAlert("Text has been cleared", "success");
+
   };
   const handleRevClick = () => {
     let newText = text.split(" ").reverse().join(" ");
     setText(newText);
+      props.showAlert("text has been reversed", "success");
+
   };
-   const handelDecClick = () => {
-     setDecoration({ textDecoration: "line-through" });
-   };
+  //  const handelDecClick = () => {
+  //    setDecoration({ textDecoration: "line-through" });
+  //  };
   return (
     <>
       <div className="container">
@@ -95,12 +107,12 @@ export default function TextForm(props) {
         >
           Reverse words
         </button>
-        <button
+        {/* <button
           className="btn btn-warning fw-bolder mb-3 text-white rounded-pill mx-2"
           onClick={handelDecClick}
         >
           Decoration
-        </button>
+        </button> */}
       </div>
       <div className="container">
         <h1 className="text-warning fw-bolder">Text Summary</h1>
