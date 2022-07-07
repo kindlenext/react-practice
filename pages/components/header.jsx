@@ -13,9 +13,9 @@ export default function Header(props) {
           width={65}
         />
       </div>
-      <h1 className="header--title col-3 text-center">Meme Generator</h1>
-      <h2 className="header--project col-3 text-center">
-        react course-project
+      <h1 className="header--title col-3 text-center">Text Analyzer</h1>
+      <h2 className="header--project col-3 fs-4 text-center">
+        Tenzies Game
       </h2>
       <div className="form-check form-switch col-2">
          <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>

@@ -1,16 +1,16 @@
 // import ListFile from "./components/lisst";
 import "bootstrap/dist/css/bootstrap.css";
-import UseStateCounter from "./components/Counter";
+// import UseStateCounter from "./components/Counter";
 import Header from "./components/header";
-import Meme from "./components/meme";
+// import Meme from "./components/meme";
 
-import UnReadMessage from "./components/renderingcond";
+// import UnReadMessage from "./components/renderingcond";
 // import List from "./components/List";
-import Joke from "./components/Joke";
-import Dice from "./components/dice";
+// import Joke from "./components/Joke";
+// import Dice from "./components/dice";
 import TextForm from "./components/TextForm";
 import React, { useState } from 'react'
-import UsingState from "./components/UsingState";
+// import UsingState from "./components/UsingState";/
 import Alert from "./components/Alert";
 
 
@@ -46,24 +46,24 @@ export default function Home() {
       <Header mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
 
-      <Meme />
+      {/* <Meme />
       <hr />
       <UsingState />
-      <hr />
-      <UseStateCounter />
-      <hr />
+      <hr /> */}
+      {/* <UseStateCounter />
+      <hr /> */}
       <Alert alert={alert} />
-      <hr />
+      {/* <hr />
       <UnReadMessage />
-      <hr />
-      <Joke
+      <hr /> */}
+      {/* <Joke
         className="mt-5"
         appName="Facebook"
         history="Create an account or log into Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates."
-      />
-      <hr />
+      /> */}
+      {/* <hr />
       <Dice />
-      <hr />
+      <hr /> */}
       <TextForm heading="Enter the Text" showAlert={ showAlert} />
     </div>
   );
